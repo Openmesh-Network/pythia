@@ -46,10 +46,12 @@
             services.pythia-indexer = {
               enable = true;
             };
+            systemd.services.pythia-indexer.after = [ "postgresql.service" ];
 
             services.pythia-frontend = {
               enable = true;
             };
+            systemd.services.pythia-frontend.after = [ "postgresql.service" ];
 
             services.postgresql = {
               enable = true;
