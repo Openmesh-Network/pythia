@@ -1,6 +1,6 @@
 {
   inputs = {
-    pythia.url = "github:Plopmenz/pythia";
+    pythia.url = "github:Openmesh-Network/pythia";
     nixpkgs.follows = "pythia/nixpkgs";
   };
 

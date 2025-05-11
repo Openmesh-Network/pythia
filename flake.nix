@@ -4,11 +4,11 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     indexer = {
-      url = "github:Plopmenz/pythia-indexer";
+      url = "github:Openmesh-Network/pythia-indexer";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     frontend = {
-      url = "github:Plopmenz/pythia-frontend";
+      url = "github:Openmesh-Network/pythia-frontend";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
