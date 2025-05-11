@@ -65,6 +65,8 @@
                 CREATE ROLE pythiafrontend WITH LOGIN PASSWORD 'pythiafrontend';
                 GRANT pg_read_all_data TO pythiafrontend;
 
+                CREATE TABLE prices (timestamp bigint, feed text, price numeric, provider text, providertype text);
+
                 CREATE TABLE ethereum_blocks (timestamp bigint, number bigint, hash character(66), extradata text, size bigint, gasused numeric);
 
                 CREATE TABLE ethereum_transactions (timestamp bigint, hash character(66), fromaddr character(42), toaddr character(42), value numeric, gas bigint, gasprice numeric, input text, blocknumber bigint);
